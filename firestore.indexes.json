@@ -1,0 +1,130 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "location",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "payRate",
+          "order": "DESCENDING"
+        }
+        // This index could be used for queries like:
+        // "Find all open jobs in London with a pay rate greater than $X"
+      ]
+    },
+    {
+      "collectionGroup": "jobs",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "postedByUserId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        }
+        // This index helps find jobs posted by a specific hirer, maybe filtered by status
+      ]
+    },
+    {
+      "collectionGroup": "applications",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "jobId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        }
+        // Useful for finding all applications for a specific job, maybe filtered by status
+      ]
+    },
+    {
+      "collectionGroup": "applications",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "employeeId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        }
+        // Useful for finding all applications submitted by a specific employee, maybe filtered by status
+      ]
+    },
+    {
+      "collectionGroup": "assignments",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "employeeId",
+          "order": "ASCENDING"
+        },
+         {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "startTime", // Or maybe a datetime field
+          "order": "DESCENDING"
+        }
+        // Helps an employee find their assignments, maybe ordered by date and filtered by status
+      ]
+    },
+     {
+      "collectionGroup": "assignments",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "hirerId",
+          "order": "ASCENDING"
+        },
+         {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "startTime", // Or maybe a datetime field
+          "order": "DESCENDING"
+        }
+        // Helps a hirer find assignments they've created, maybe ordered by date and filtered by status
+      ]
+    },
+    {
+      "collectionGroup": "reviews",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "subjectUserId", // The user being reviewed
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewDate",
+          "order": "DESCENDING"
+        }
+        // Helps find all reviews for a particular user
+      ]
+    }
+    // You might add more here as your queries evolve!
+  ],
+  "fieldOverrides": [
+    // This section is less common initially, but you might add things here
+    // if you needed to change default single-field index behavior.
+    // For example, disabling an automatic index for a specific field
+    // to save on index storage/writes (though generally not recommended
+    // unless you have a good reason).
+  ]
+}

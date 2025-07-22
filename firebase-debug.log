@@ -1,0 +1,107 @@
+[debug] [2025-07-22T16:11:28.553Z] ----------------------------------------------------------------------
+[debug] [2025-07-22T16:11:28.556Z] Command:       D:\node.exe C:\Users\bhara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-07-22T16:11:28.556Z] CLI Version:   14.3.0
+[debug] [2025-07-22T16:11:28.556Z] Platform:      win32
+[debug] [2025-07-22T16:11:28.556Z] Node Version:  v22.17.1
+[debug] [2025-07-22T16:11:28.557Z] Time:          Tue Jul 22 2025 21:41:28 GMT+0530 (India Standard Time)
+[debug] [2025-07-22T16:11:28.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-22T16:11:28.559Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-22T16:11:28.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-22T16:11:28.733Z] > authorizing via signed-in user (221001030@rajalakshmi.edu.in)
+[debug] [2025-07-22T16:11:28.733Z] [iam] checking project tasktap-5d5ed for permissions ["firebase.projects.get"]
+[debug] [2025-07-22T16:11:28.734Z] Checked if tokens are valid: false, expires at: 1747021364230
+[debug] [2025-07-22T16:11:28.734Z] Checked if tokens are valid: false, expires at: 1747021364230
+[debug] [2025-07-22T16:11:28.734Z] > refreshing access token with scopes: []
+[debug] [2025-07-22T16:11:28.735Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-22T16:11:28.735Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-22T16:11:30.364Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-22T16:11:30.364Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-22T16:11:33.367Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-22T16:11:33.368Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-22T16:11:33.375Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed:testIamPermissions [none]
+[debug] [2025-07-22T16:11:33.375Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed:testIamPermissions x-goog-quota-user=projects/tasktap-5d5ed
+[debug] [2025-07-22T16:11:33.375Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-07-22T16:11:36.593Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed:testIamPermissions 200
+[debug] [2025-07-22T16:11:36.594Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-07-22T16:11:36.594Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:36.594Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:36.594Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tasktap-5d5ed/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-07-22T16:11:36.594Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tasktap-5d5ed/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/tasktap-5d5ed
+[debug] [2025-07-22T16:11:41.661Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tasktap-5d5ed/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-07-22T16:11:41.661Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tasktap-5d5ed/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-07-22T16:11:41.661Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:41.661Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:41.661Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed [none]
+[debug] [2025-07-22T16:11:42.919Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed 200
+[debug] [2025-07-22T16:11:42.920Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/tasktap-5d5ed {"projectNumber":"447613239408","projectId":"tasktap-5d5ed","lifecycleState":"ACTIVE","name":"TASKTAP","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-09T14:51:52.141248Z","parent":{"type":"organization","id":"310687721298"}}
+[info] 
+[info] === Serving from 'D:\PROJECTS\TASK TAP WEB APP'...
+[info] 
+[debug] [2025-07-22T16:11:42.923Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:42.923Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:42.928Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tasktap-5d5ed/sites 
+[debug] [2025-07-22T16:11:42.934Z] defaultcredentials: writing to file C:\Users\bhara\AppData\Roaming\firebase\221001030_rajalakshmi_edu.in_application_default_credentials.json
+[debug] [2025-07-22T16:11:42.935Z] Setting GAC to C:\Users\bhara\AppData\Roaming\firebase\221001030_rajalakshmi_edu.in_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\bhara\\AppData\\Roaming\\firebase\\221001030_rajalakshmi_edu.in_application_default_credentials.json"}}
+[debug] [2025-07-22T16:11:42.935Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:42.936Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:42.936Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/adminSdkConfig [none]
+[debug] [2025-07-22T16:11:47.655Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tasktap-5d5ed/sites 200
+[debug] [2025-07-22T16:11:47.655Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tasktap-5d5ed/sites {"sites":[{"name":"projects/tasktap-5d5ed/sites/tasktap-5d5ed","defaultUrl":"https://tasktap-5d5ed.web.app","appId":"1:447613239408:web:400d409944e0a0180874b5","type":"DEFAULT_SITE"}]}
+[debug] [2025-07-22T16:11:47.655Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:47.655Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:47.655Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/webApps/1:447613239408:web:400d409944e0a0180874b5/config [none]
+[debug] [2025-07-22T16:11:49.327Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/adminSdkConfig 200
+[debug] [2025-07-22T16:11:49.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/adminSdkConfig {"projectId":"tasktap-5d5ed","databaseURL":"https://tasktap-5d5ed-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"tasktap-5d5ed.firebasestorage.app"}
+[debug] [2025-07-22T16:11:53.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/webApps/1:447613239408:web:400d409944e0a0180874b5/config 200
+[debug] [2025-07-22T16:11:53.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed/webApps/1:447613239408:web:400d409944e0a0180874b5/config {"projectId":"tasktap-5d5ed","appId":"1:447613239408:web:400d409944e0a0180874b5","databaseURL":"https://tasktap-5d5ed-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"tasktap-5d5ed.firebasestorage.app","apiKey":"AIzaSyDYP1sfJ5PLO4_AcPMPgyVv3hC1HMtIzOI","authDomain":"tasktap-5d5ed.firebaseapp.com","messagingSenderId":"447613239408","measurementId":"G-NQ431L5NG4"}
+[debug] [2025-07-22T16:11:53.529Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:53.529Z] Checked if tokens are valid: true, expires at: 1753204292368
+[debug] [2025-07-22T16:11:53.529Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed [none]
+[debug] [2025-07-22T16:11:53.944Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed 200
+[debug] [2025-07-22T16:11:53.944Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tasktap-5d5ed {"projectId":"tasktap-5d5ed","projectNumber":"447613239408","displayName":"TASKTAP","name":"projects/tasktap-5d5ed","resources":{"hostingSite":"tasktap-5d5ed","realtimeDatabaseInstance":"tasktap-5d5ed-default-rtdb"},"state":"ACTIVE","etag":"1_ae72495a-b382-4f45-957b-4e3874a918ad"}
+[info] i  functions: Watching "D:\PROJECTS\TASK TAP WEB APP\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\PROJECTS\\TASK TAP WEB APP\\functions\" for Cloud Functions..."}}
+[info] i  hosting[tasktap-5d5ed]: Serving hosting files from: frontend {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mfrontend\u001b[22m"}}
+[info] +  hosting[tasktap-5d5ed]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-07-22T16:11:53.962Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-07-22T16:11:57.532Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-07-22T16:11:57.532Z] Building nodejs source
+[debug] [2025-07-22T16:11:57.533Z] Failed to find version of module node: reached end of search path D:\PROJECTS\TASK TAP WEB APP\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-07-22T16:11:57.534Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-07-22T16:11:57.540Z] Found firebase-functions binary at 'D:\PROJECTS\TASK TAP WEB APP\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8584
+
+[debug] [2025-07-22T16:12:02.776Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:07 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:07 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:07 +0000] "GET /css/style.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:07 +0000] \"GET /css/style.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:07 +0000] "GET /js/firebase-init.js HTTP/1.1" 200 515 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:07 +0000] \"GET /js/firebase-init.js HTTP/1.1\" 200 515 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:07 +0000] "GET /js/auth.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:07 +0000] \"GET /js/auth.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:13 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:13 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:24 +0000] "GET /about.html HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:24 +0000] \"GET /about.html HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:24 +0000] "GET /js/main.js HTTP/1.1" 200 - "http://localhost:5000/about.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:24 +0000] \"GET /js/main.js HTTP/1.1\" 200 - \"http://localhost:5000/about.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
+[info] i  hosting: ::1 - - [22/Jul/2025:16:14:28 +0000] "GET /index.html HTTP/1.1" 200 - "http://localhost:5000/about.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2025:16:14:28 +0000] \"GET /index.html HTTP/1.1\" 200 - \"http://localhost:5000/about.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0\""}}
